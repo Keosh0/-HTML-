@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Форма обратной связи</title>
+    <style>
+        /* Немного базовых стилей для красоты и отступов */
+        form {
+            max-width: 400px;
+            margin: 20px;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-family: sans-serif;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        label.main-label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Свяжитесь с нами</h2>
+
+    <form action="#" method="post">
+        
+        <div class="form-group">
+            <label class="main-label" for="username">Имя пользователя:</label>
+            <input type="text" id="username" name="username" required>
+        </div>
+
+        <div class="form-group">
+            <label class="main-label" for="email">Адрес электронной почты:</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+
+        <div class="form-group">
+            <p class="main-label" style="margin-bottom: 5px;">Ваш пол:</p>
+            <input type="radio" id="gender_male" name="gender" value="male">
+            <label for="gender_male">Мужской</label>
+            <br>
+            <input type="radio" id="gender_female" name="gender" value="female">
+            <label for="gender_female">Женский</label>
+        </div>
+
+        <div class="form-group">
+            <label class="main-label" for="country">Страна проживания:</label>
+            <select id="country" name="country">
+                <option value="">-- Выберите страну --</option>
+                <option value="russia">Россия</option>
+                <option value="belarus">Беларусь</option>
+                <option value="kazakhstan">Казахстан</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <input type="checkbox" id="agreement" name="agreement" required>
+            <label for="agreement">Я согласен с условиями использования</label>
+        </div>
+
+        <div class="form-group">
+            <button type="submit">Отправить</button>
+        </div>
+
+    </form>
+
+</body>
+</html>

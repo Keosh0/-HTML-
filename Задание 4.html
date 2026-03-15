@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Семантическая разметка HTML5</title>
+    <style>
+        /* Базовые стили для визуального выделения семантических блоков */
+        body { font-family: Arial, sans-serif; margin: 0; padding: 0; }
+        header { background-color: #f4f4f4; padding: 20px; text-align: center; border-bottom: 2px solid #ccc; }
+        nav { background-color: #333; padding: 10px; text-align: center; }
+        nav a { color: white; margin: 0 15px; text-decoration: none; }
+        nav a:hover { text-decoration: underline; }
+        main { padding: 20px; max-width: 800px; margin: 0 auto; }
+        section { margin-bottom: 30px; padding: 15px; border: 1px solid #eee; border-radius: 5px; }
+        footer { background-color: #f4f4f4; padding: 20px; text-align: center; border-top: 2px solid #ccc; margin-top: 40px; }
+    </style>
+</head>
+<body>
+
+    <header>
+        <img src="logo.png" alt="Логотип сайта" width="80">
+        <h1>Мой Семантический Сайт</h1>
+    </header>
+
+    <nav>
+        <a href="#">Главная страница</a>
+        <a href="#">О проекте</a>
+        <a href="#">Услуги</a>
+        <a href="#">Связаться с нами</a>
+    </nav>
+
+    <main>
+        
+        <section>
+            <h2>Раздел 1: Что такое семантика в HTML?</h2>
+            <p>Семантическая верстка подразумевает использование HTML-тегов в соответствии с их смысловым назначением, а не просто для изменения внешнего вида.</p>
+            <p>Это помогает поисковым роботам (SEO) и программам экранного доступа для людей с ограниченными возможностями правильно понимать структуру документа.</p>
+        </section>
+
+        <section>
+            <h2>Раздел 2: Основные семантические теги</h2>
+            <p>В HTML5 появилось множество новых тегов для структурирования документа. К ним относятся <strong>header</strong>, <strong>nav</strong>, <strong>main</strong>, <strong>section</strong>, <strong>article</strong>, <strong>aside</strong> и <strong>footer</strong>.</p>
+            <p>Каждый из этих элементов несет свою четкую функцию и делает код читаемым для разработчиков.</p>
+        </section>
+
+    </main>
+
+    <footer>
+        <h3>Наши контакты</h3>
+        <address>
+            Email: <a href="mailto:info@example.com">info@example.com</a><br>
+            Телефон: +7 (999) 123-45-67<br>
+            Адрес: г. Москва, ул. Программистов, д. 1
+        </address>
+    </footer>
+
+</body>
+</html>
